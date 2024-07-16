@@ -30,5 +30,8 @@ provided link.
 13. Search by page name or any word. 
 14. Share analysis
 # Demo
-https://github.com/user-attachments/assets/fef7bf5d-bf2f-42dc-94a3-0f5106a8e12f
+
+https://github.com/user-attachments/assets/09717a5b-12c5-4d21-b65a-b1f3407dc6e5
+
+
 
