@@ -1,0 +1,173 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.306);
+  color: black;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1100;
+  transition: all 0.3s;
+}
+.navbar .nav-item a {
+  color: black;
+}
+.navbar .navbar-brand .logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+}
+.logo {
+  display: inline;
+}
+.navbar .navbar-brand .logo .halfLogo {
+  font-weight: 700;
+  color: #f2690d;
+}
+.navbar .nav-item {
+  margin-right: 17px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.logoImg {
+  width: 35px;
+  margin-left: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+  border-radius: 0;
+  color: transparent;
+}
+.navbar-toggler span {
+  color: black;
+  font-size: 20px;
+}
+
+/*& start Nav links */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  height: 3px;
+  left: 6px; /* Fix missing 'px' unit */
+  background-color: black;
+  width: 0;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::before {
+  width: 80%;
+}
+
+.active {
+  transition: 0.4s all;
+}
+.active::before {
+  width: 80%;
+}
+/*& End Nav links */
+
+/** start search*/
+.searchInput {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all 0.3s;
+}
+.searchInput:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #f2690d43;
+}
+/** end search*/
+
+
+/*& Start Profile name and Dropdown list */
+.profile {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  /* border: white 1px solid; */
+  border-radius: 50%;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #f2690d;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+.profile .profileName {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.scrolled {
+  background-color: #fefaf6;
+}
+
+
+
+
+/* dropdown */
+.navbar .container .dropdown .dropdown-menu {
+  margin-top: 15px; /* Add top margin */
+  margin-left: -30px; /* Add left margin */
+}
+.navbar .container .dropdown .dropdown-menu li .dropLinks {
+  text-decoration: none;
+  color: black;
+  padding: 15px 10px;
+  margin-top: 40px;
+  transition: .5s all;
+  font-weight: 600;
+  font-size: 18px;
+  
+}
+.navbar .container .dropdown .dropdown-menu li .dropLinks:hover{
+   color: #f2690d;
+}
+.navbar .container .dropdown .dropdown-menu .first{
+  margin-bottom: 7px;
+}
+.navbar .container .dropdown .dropdown-menu li{
+  transition: .5s all;
+}
+.navbar .container .dropdown .dropdown-menu li:hover{
+  transform: translateX(10px);
+}
+/*& End Profile name and Dropdown list */
+
+/** medium screens */
+@media screen and (max-width: 992px) {
+  .nav-item .active::before {
+    width: 15%;
+  }
+  .nav-item a:hover::before {
+    width: 15%;
+  }
+  .nav-link::before {
+    left: 0px;
+  }
+  .searchInput {
+    margin-right: 10px;
+  }
+  .profile {
+    margin-top: 3px;
+  }
+}
+
+/*& mobile screen */
+@media screen and (max-width: 769px) {
+  .profile {
+    margin-top: 10px;
+  }
+  .navbar .container .dropdown .dropdown-menu {
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+}

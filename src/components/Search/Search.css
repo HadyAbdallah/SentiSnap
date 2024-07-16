@@ -1,0 +1,352 @@
+.search {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: #fefaf6;
+  padding-block: 100px;
+}
+
+.search .search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 400px;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.search .search-bar {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  flex-grow: 1;
+  border-radius: 25px 0 0 25px;
+}
+
+.search .search-button {
+  background-color: #f2690d;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0 25px 25px 0;
+  transition: background-color 0.3s;
+}
+
+.search .search-button:hover {
+  background-color: #e8e8e8;
+}
+
+.search .search-button:focus {
+  outline: none;
+}
+
+.search .search-button svg {
+  stroke: white;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.search .search-button:hover svg {
+  stroke: black;
+}
+
+/* start post */
+
+.search .resultBox {
+  background-color: #f0dfcc;
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 20px;
+}
+
+.search .resultBox h3 {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* 
+  .search .resultBox .sameAsInput {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px #7a5d3b solid;
+    text-align: start;
+    width: 90%;
+    min-height: 70px;
+    background-color: #ece1d4;
+  
+    overflow-y: auto;
+  } */
+
+.search .sameAsInput {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.search .sameAsInput a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* text-decoration: none; */
+}
+
+.search .sameAsInput a:hover {
+  text-decoration: underline;
+}
+
+.search .sameAsInput a::after {
+  content: attr(data-full-url);
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -1.5em;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.search .sameAsInput a:hover::after {
+  display: block;
+}
+
+.search .title {
+  margin-bottom: 20px;
+  /* text-shadow: 0 0 3px #f2690d; */
+  text-align: center;
+}
+
+/* end post */
+
+/* start spinner */
+.search .spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #f2690d;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  /* Add margin here */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* end spinner */
+
+/* .search .profile {
+  background-color: #ff5722;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  margin: auto;
+  margin-bottom: 15px;
+
+} */
+
+/* .search .profileName {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+
+} */
+
+.search .postsHeader {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.search .postsHeader:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  border: 1px solid #f2690d;
+  padding-block: 4px 5px;
+  width: 70px;
+  right: 0;
+  left: 0;
+  bottom: -18px;
+  border-left: none;
+  border-right: none;
+}
+
+.search .postsHeader:after {
+  content: "";
+  bottom: 5px;
+  width: 160px;
+  height: 0.4px;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  border: 1px solid #f2690d;
+  background-color: #f2690d;
+}
+
+/* Start Comments Button */
+.search .commentBtn {
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 1px #f2690d solid;
+  background-color: #f2690d;
+  color: white;
+  font-weight: 500;
+  transition: all.4s;
+  display: block;
+  /* margin: auto; */
+  margin-bottom: 10px;
+}
+
+.search .commentBtn:hover {
+  background-color: #f0dfcc;
+  color: black;
+}
+
+/* .search .comment {
+  margin-block: 10px;
+  font-size: large;
+} */
+
+/* End Comments Button */
+
+/** Start Modal Style */
+.search .modal .modal-dialog {
+  /* margin-top: 200px; */
+  width: 75%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 200px;
+  border-radius: 10px;
+}
+
+.search .modal .closeBtn {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgb(76, 75, 75);
+  color: white;
+  transition: all.4s;
+  display: block;
+  /* margin: auto; */
+  margin-top: 10px;
+}
+
+.search .modal .closeBtn:hover {
+  background-color: rgb(177, 0, 0);
+  border: 1px solid transparent;
+}
+
+.search .modal-body {
+  max-height: 200px;
+  min-height: 100px;
+  overflow: auto;
+}
+
+/** End Modal Style */
+
+.search .search2Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/** Start pie chart style */
+.search .pie-chart-container {
+  width: 250px; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+  margin: auto; /* Center the chart horizontally */
+  padding: 5px;
+}
+/** End pie chart style */
+
+
+
+/*& Start Modeling the comments of the modal */
+.comments-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds space between comments */
+}
+
+.comment {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment:not(:last-child) {
+  margin-bottom: 10px; /* Adds space below each comment except the last one */
+}
+/*& End Modeling the comments of the modal */
+
+
+/*! Start center the profile and title horizontally */
+.search .profile-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px; /* Adjust as needed for spacing */
+}
+
+.search .profile-title-container .profile {
+  margin-right: 10px; /* Adjust as needed for spacing */
+}
+
+.search .profile {
+  background-color: #ff5722;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.search .profileName {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+/*! End center the profile and title horizontally */

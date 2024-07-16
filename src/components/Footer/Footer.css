@@ -1,0 +1,167 @@
+/*^ Start Footer Style ^*/
+footer {
+  background-color: #0f1113;
+  color: white;
+  box-shadow: 0 -2px 4px #0007;
+  padding-block: 20px;
+}
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+footer .container .socialMedia,
+footer .container .getInTouch {
+  width: calc(calc(100% - 1rem * 2) / 4);
+}
+footer .container .logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer .container .logo img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+footer .container .logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+footer .container .socialMedia p,
+footer .container .quickLinksSection p {
+  font-size: 1rem;
+  margin-block: 0.5rem;
+}
+
+footer .container .socialMedia h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid #ddd6;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+}
+footer .container .socialMedia .socialLinksFooter {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+footer .container .quickLinksSection .inputSubscription {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-block: 1rem;
+  width: 80%;
+    text-align: start;
+}
+footer .container .quickLinksSection .inputSubscription input {
+  flex-grow: 1;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  /* width: 100px; */
+}
+footer .container .quickLinksSection .inputSubscription input:focus {
+  outline: none;
+}
+footer .container .quickLinksSection .inputSubscription .btnFooter {
+  background-color: #f2690d;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  font-size: 0.8rem;
+  transition: background-color 0.3s;
+  border-radius: 0.3rem;
+}
+footer .container .quickLinksSection .inputSubscription .btnFooter:hover {
+  background-color: #eb782c;
+}
+
+footer .container .quickLinksSection .inputSubscription .btnFooter span {
+  margin-right: 0.2rem;
+}
+footer .container .socialMedia li span {
+  color: white;
+  font-size: 1.2rem;
+}
+footer .container .logo h1 span {
+  color: #f2690d;
+}
+footer .container .quickLinksSection h2,
+footer .container .getInTouch h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+footer .container .quickLinksSection {
+  width: calc(calc(100% - 1rem * 2) / 2);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+}
+footer .container .getInTouch ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer .container .getInTouch ul li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+footer .container .getInTouch ul li p {
+  display: inline;
+  margin-bottom: 0;
+}
+footer .container .getInTouch ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .container .getInTouch ul li span {
+  color: #f2690d;
+  font-size: 1.2rem;
+  margin-left: 0.4rem;
+}
+footer .container *::selection {
+  background-color: #f2690d;
+}
+/*^ End Footer Style ^*/
+
+/* In smaller pages */
+@media screen and (max-width: 992px) {
+  /* footer */
+  footer .container .socialMedia,
+  footer .container .getInTouch {
+    width: calc(calc(100% - 1rem * 2) / 2);
+    order: 1;
+  }
+  footer .container .quickLinksSection {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  /* footer */
+  footer .container .socialMedia {
+    width: 100%;
+    order: 1;
+  }
+  footer .container .getInTouch {
+    width: 100%;
+    order: 3;
+  }
+  footer .container .quickLinksSection {
+    width: 100%;
+    order: 2;
+  }
+}

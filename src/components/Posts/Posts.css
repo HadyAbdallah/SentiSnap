@@ -1,0 +1,195 @@
+.posts {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: #fefaf6;
+  padding-block: 100px;
+}
+.posts h3{
+  display: inline-block;
+}
+.posts .profile{
+  text-align: center;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  /* border: white 1px solid; */
+  border-radius: 50%;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #f2690d;
+  margin-bottom: 0px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.posts .profileName{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.posts .postsHeader {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+.posts .postsHeader:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  border: 1px solid #f2690d;
+  padding-block: 4px 5px;
+  width: 70px;
+  right: 0;
+  left: 0;
+  bottom: -18px;
+  border-left: none;
+  border-right: none;
+}
+.posts .postsHeader:after {
+  content: "";
+  bottom: 5px;
+  width: 160px;
+  height: 0.4px;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  border: 1px solid #f2690d;
+  background-color: #f2690d;
+}
+/* start Result Box */
+.posts .resultBox {
+  background-color: #f0dfcc;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 20px;
+}
+.posts .resultBox h3 {
+  text-align: start;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+/* .posts .resultBox .sameAsInput {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px #7a5d3b solid;
+  text-align: start;
+  width: 90%;
+  min-height: 70px;
+  background-color: #ece1d4;
+
+  overflow-y: auto;
+} */
+.posts .title {
+  margin-bottom: 20px;
+  display: block;
+  /* text-shadow: 0 0 3px #f2690d; */
+  /* text-align: center; */
+}
+/* end Result Box */
+
+.posts .sameAsInput {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.posts .sameAsInput a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* text-decoration: none; */
+}
+
+.posts .sameAsInput a:hover {
+  text-decoration: underline;
+}
+
+.posts .sameAsInput a::after {
+  content: attr(data-full-url);
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -1.5em;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.posts .sameAsInput a:hover::after {
+  display: block;
+}
+
+/* Start Comments Button */
+.posts .commentBtn {
+  padding: 5px 25px;
+  border-radius: 20px;
+  border: 1px #f2690d solid;
+  background-color: #f2690d;
+  color: white;
+  font-weight: 500;
+  transition: all.4s;
+  display: block;
+  /* margin: auto; */
+  margin-top: 10px;
+}
+.posts .commentBtn:hover {
+  background-color: #f0dfcc;
+  color: black;
+}
+.posts .comment {
+  margin-block: 10px;
+  font-size: large;
+}
+.posts .modal-body {
+  max-height: 150px;
+  min-height: 100px;
+  overflow: auto;
+}
+/* End Comments Button */
+
+/** Start Modal Style */
+
+.posts .modal .modal-dialog{
+  /* margin-top: 200px; */
+  width: 75%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 200px;
+  border-radius: 10px;
+}
+.posts .modal .closeBtn{
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgb(76, 75, 75);
+  color: white;
+  transition: all.4s;
+  display: block;
+  /* margin: auto; */
+  margin-top: 10px;
+}
+.posts .modal .closeBtn:hover{
+  background-color: rgb(177, 0, 0);
+  border: 1px solid transparent;
+}
+/** End Modal Style */
+

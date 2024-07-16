@@ -1,0 +1,123 @@
+.signup {
+  min-height: 100vh;
+  background-color: #fefaf6;
+  overflow: hidden;
+}
+.signup .backgroudPic {
+  background-image: url("../../assets/imgs/login.png");
+  background-size: cover;
+  background-position: center;
+  /* background-color: blue; */
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.signup .backgroudPic .signHeader {
+  color: #fefaf6;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 65px;
+}
+
+.signup .center {
+  text-align: center;
+  min-height: 100vh;
+  display: grid;
+  place-items: center; /* Center both horizontally and vertically */
+  padding: 30px;
+}
+.signup .center .content h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.signup .center .content h5 {
+  margin-bottom: 50px;
+}
+.input-control {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    transition: all 0.3s;
+}
+.input-control:focus {
+  border-color: #f2690d43;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #f2690d43;
+}
+.signup .center .content .signUpButton {
+  padding: 5px 35px;
+  border-radius: 10px;
+  border: 1px #f2690d solid;
+  background-color: #f2690d;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-block: 15px;
+  transition: all.4s;
+}
+.signup .center .content .signUpButton:hover {
+  background-color: #fefaf6;
+  color: black;
+}
+.signup .center .content .orOption {
+  position: relative;
+  margin-bottom: 15px;
+}
+.signup .center .content .orOption::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 53%;
+  height: 2px;
+  width: 25%;
+  background-color: #2c3e50;
+}
+.signup .center .content .orOption::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 53%;
+  height: 2px;
+  width: 25%;
+  background-color: #2c3e50;
+}
+.signup .center .content .optionBtn{
+  padding: 5px 35px;
+  border-radius: 10px;
+  border: 1px #f2690d solid;
+  background-color: #fefaf6;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-block: 15px;
+  transition: all.4s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 80%;
+}
+.signup .center .content .optionBtn:hover{
+  
+  background-color: #f2690d;
+  color: white;
+}
+.signup .center .content .optionBtn .btnIcon{
+  margin-right: 20px;
+}
+
+
+
+/*& mobile screen */
+@media screen and (max-width: 769px) {
+  .signup .center .content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .signup .center .content .optionBtn {
+    padding: 5px ;
+  }
+
+}

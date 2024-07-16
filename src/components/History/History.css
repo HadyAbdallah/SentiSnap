@@ -1,0 +1,298 @@
+.history {
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: #fefaf6;
+  padding-block: 100px;
+}
+.history .historyHeader {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+.history .historyHeader::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  border: 1px solid #f2690d;
+  padding-block: 4px 5px;
+  width: 70px;
+  right: 0;
+  left: 0;
+  bottom: -18px;
+  border-left: none;
+  border-right: none;
+}
+.history .historyHeader::after {
+  content: "";
+  bottom: 5px;
+  width: 160px;
+  height: 0.4px;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  border: 1px solid #f2690d;
+  background-color: #f2690d;
+}
+/** nav links **/
+.history .navLinks .nav {
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.history .navLinks .nav-tabs {
+  border: none;
+  --bs-nav-tabs-border-width: 0;
+  --bs-nav-tabs-border-color: 0;
+  --bs-nav-tabs-border-radius: 0;
+  --bs-nav-tabs-link-hover-border-color: 0;
+  --bs-nav-tabs-link-active-color: 0;
+  --bs-nav-tabs-link-active-bg: 0;
+  --bs-nav-tabs-link-active-border-color: 0;
+}
+
+.history .navLinks .nav .nav-link {
+  color: #1c1c1c;
+  font-weight: 700;
+  position: relative;
+}
+.history .navLinks .nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #1c1c1c;
+  transition: 0.4s all;
+  left: 0;
+  transform: translateX(30%);
+  bottom: 0;
+}
+
+.history .navLinks .nav .active::after {
+  width: 60%;
+}
+/** end nav links */
+
+/* start Result Box */
+.history .resultBox {
+  background-color: #f0dfcc;
+  width: 45%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+.history .resultBox h3 {
+  text-align: start;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.history .sameAsInput {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.history .sameAsInput a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* text-decoration: none; */
+}
+
+.history .sameAsInput a:hover {
+  text-decoration: underline;
+}
+
+.history .sameAsInput a::after {
+  content: attr(data-full-url);
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -1.5em;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.history .sameAsInput a:hover::after {
+  display: block;
+}
+.history .resultBox .shareBtn {
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: 1px #f2690d solid;
+  background-color: #f2690d;
+  color: white;
+  font-weight: 500;
+  transition: all.4s;
+  display: block;
+  /* margin: auto; */
+  margin-top: 10px;
+}
+.history .resultBox .shareBtn:hover {
+  background-color: #f0dfcc;
+  color: black;
+}
+.history .historyPostNumber {
+  /* background-color: rgb(7, 7, 129); */
+  background-color: #f2690d;
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+  /* line-height: -20px; */
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 700;
+}
+/* end Result Box */
+
+
+.history .mostFrequent{
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: 1px #f2690d solid;
+  background-color: #f2690d;
+  color: white;
+  font-weight: 500;
+  transition: all.4s;
+  display: block;
+  /* margin: auto; */
+  margin-top: 10px;
+}
+.history .mostFrequent:hover{
+  background-color: #f0dfcc;
+  color: black;
+}
+.history .frequentWord{
+  border: 2px solid black;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: 600;
+  margin:5px;
+}
+
+
+.history .sameAsInput {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.history .sameAsInput a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* text-decoration: none; */
+}
+
+.history .sameAsInput a:hover {
+  text-decoration: underline;
+}
+
+.history .sameAsInput a::after {
+  content: attr(data-full-url);
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: -1.5em;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.history .sameAsInput a:hover::after {
+  display: block;
+}
+
+/* Start Comments Button */
+.history .commentBtn {
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: 1px #f2690d solid;
+  background-color: #f2690d;
+  color: white;
+  font-weight: 500;
+  transition: all.4s;
+  display: block;
+  /* margin: auto; */
+  margin-top: 10px;
+}
+.history .commentBtn:hover {
+  background-color: #f0dfcc;
+  color: black;
+}
+.history .comment {
+  margin-block: 10px;
+  font-size: large;
+}
+.history .modal-body {
+  max-height: 150px;
+  min-height: 100px;
+  overflow: auto;
+}
+/* End Comments Button */
+
+/** Start Modal Style */
+
+.history .modal .modal-dialog{
+  /* margin-top: 200px; */
+  width: 75%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 200px;
+  border-radius: 10px;
+}
+.history .modal .closeBtn{
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: rgb(76, 75, 75);
+  color: white;
+  transition: all.4s;
+  display: block;
+  /* margin: auto; */
+  margin-top: 10px;
+}
+.history .modal .closeBtn:hover{
+  background-color: rgb(177, 0, 0);
+  border: 1px solid transparent;
+}
+/** End Modal Style */
+
+/** Start pie chart style */
+.history .pie-chart-container {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  margin: auto; 
+  padding: 5px;
+}
+/** End pie chart style */
+
+
+.history .scrollable {
+  max-height: 200px; /* Example: Adjust based on your design */
+  overflow: auto;
+}
