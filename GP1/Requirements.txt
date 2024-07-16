@@ -1,0 +1,17 @@
+pandas
+numpy
+re
+string
+pyarabic
+nltk
+facebook-scraper
+logging
+instaloader
+pathlib
+json
+pickle
+scikit-learn
+gensim
+requests
+tensorflow
+lxml_html_clean
