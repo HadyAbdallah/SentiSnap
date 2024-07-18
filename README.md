@@ -1,5 +1,5 @@
 # SentiSnap
-# Description
+## Description
 This project is inspired by the growing importance of understanding people's feelings and opinions online, especially in Arabic reviews. Nowadays, what people say online is a big deal, and it influences what others think and decide. However, it's not always easy to figure out how people feel in these online discussions.
 #
 The main goal is to create a tool that helps users, including online brands, influencers, and companies, better understand the sentiments expressed in Arabic reviews on different social media platforms, particularly Instagram and Facebook. Ultimately, we hope that this tool will empower brands, influencers, and companies to improve their products, content, or any related aspects based on the sentiments expressed in the reviews, leading to continuous enhancement and better connection with their audience.
@@ -11,7 +11,7 @@ expressed in a piece of text. It is widely used in various applications, such as
 media monitoring, customer feedback analysis, and market research. Machine 
 learning techniques are commonly employed for sentiment analysis due to their 
 ability to automatically learn patterns and relationships from data.
-# Features
+## Features
 User can: 
 1. Sign-up.
 2. Sign-in.
@@ -29,7 +29,7 @@ provided link.
 12. Show top 10 links of each category. 
 13. Search by page name or any word. 
 14. Share analysis
-# Demo
+## Demo
 
 https://github.com/user-attachments/assets/09717a5b-12c5-4d21-b65a-b1f3407dc6e5
 
